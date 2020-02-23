@@ -1,0 +1,88 @@
+html {
+    @apply .w-full;
+    @apply .h-full;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    @apply .w-full;
+    @apply .min-h-screen;
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    @apply .text-black;
+    @apply .bg-white;
+}
+
+.level {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.level-item {
+    align-items: center;
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.level-left,
+.level-right {
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.level-left {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.level-right {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.site-wrapper {
+    flex-grow: 1;
+}
+
+.site-header {
+    @apply .flex;
+    @apply .items-center;
+    height: 4rem;
+    z-index: 10;
+    position: static;
+}
+
+.burger {
+    height: 100%;
+    width: 58px;
+    position: relative;
+    cursor: pointer;
+}
+
+.svg-inline-burger {
+    width: 18px;
+    height: 16px;
+    min-width: 18px;
+    min-height: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -8px 0 0 -9px;
+}
+
+.header-cart {
+    position: relative;
+    display: block;
+}
+
+.header-cart__icon {
+    display: inline-block;
+}
